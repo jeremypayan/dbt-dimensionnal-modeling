@@ -1,0 +1,14 @@
+[0m11:47:16.802471 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc831c8cbe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc83384d820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc83386d2b0>]}
+
+
+============================== 11:47:16.808201 | 383ee7cc-63e9-4614-a109-fef090fadcd5 ==============================
+[0m11:47:16.808201 [info ] [MainThread]: Running with dbt=1.6.6
+[0m11:47:16.808816 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': '/Users/jeremy_payan/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt deps', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:47:16.809812 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/jeremy_payan/Desktop/projets/dbt-dimensional-modelling/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m11:47:16.811192 [debug] [MainThread]: Command `dbt deps` failed at 11:47:16.810447 after 0.03 seconds
+[0m11:47:16.811644 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc831c8cbe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc83386dee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc83386deb0>]}
+[0m11:47:16.812075 [debug] [MainThread]: Flushing usage events
