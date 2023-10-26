@@ -1,0 +1,66 @@
+version: 2
+
+models:
+  - name: fct_sales
+    columns:
+
+      - name: sales_key
+        description: The surrogate key of the fct sales
+        tests:
+          - not_null
+          - unique
+
+      - name: product_key
+        description: The foreign key of the product
+        tests:
+          - not_null
+
+      - name: customer_key
+        description: The foreign key of the customer
+        tests:
+          - not_null 
+
+       - name: creditcard_key
+        description: The foreign key of the creditcar identifyer
+        tests:
+          - not_null 
+      
+      - name: shipadress_key
+        description: The foreign key of the ship adress
+        tests:
+          - not_null 
+      
+      - name: order_status_key
+        description: The foreign key of the order status
+        tests:
+          - not_null 
+
+      - name: order_date_key
+        description: The foreign key of the order date
+        tests:
+          - not_null 
+
+      - name: salesorderid
+        description: salesorder identifyer
+        tests:
+          - not_null 
+          - unique
+
+      - name: shiptoaddressid
+        description: ship adress id 
+        tests:
+          - not_null 
+
+      - name: unitprice
+        description: unit price 
+        tests:
+          - not_null 
+
+
+      - name: orderqty
+        description: The quantity of the product 
+        tests:
+          - not_null
+
+      - name: revenue
+        description: The revenue obtained by multiplying unitprice and orderqty
