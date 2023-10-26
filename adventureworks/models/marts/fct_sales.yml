@@ -20,12 +20,12 @@ models:
         tests:
           - not_null 
 
-       - name: creditcard_key
+      - name: creditcard_key
         description: The foreign key of the creditcar identifyer
         tests:
           - not_null 
       
-      - name: shipadress_key
+      - name: ship_address_key
         description: The foreign key of the ship adress
         tests:
           - not_null 
@@ -44,10 +44,9 @@ models:
         description: salesorder identifyer
         tests:
           - not_null 
-          - unique
-
-      - name: shiptoaddressid
-        description: ship adress id 
+     
+      - name: salesorderdetailid
+        description: salesorder detail identifyer
         tests:
           - not_null 
 

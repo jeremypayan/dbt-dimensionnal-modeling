@@ -27,10 +27,9 @@ SELECT  {{ dbt_utils.generate_surrogate_key(['stg_salesorderdetail.salesorderid'
         {{ dbt_utils.generate_surrogate_key(['orderstatus']) }} as order_status_key,
         {{ dbt_utils.generate_surrogate_key(['orderdate']) }} as order_date_key,
         stg_salesorderheader.salesorderid,
-        stg_salesorderheader.shiptoaddressid, 
+        stg_salesorderdetail.salesorderdetailid,
         stg_salesorderdetail.unitprice,
         stg_salesorderdetail.orderqty,
         stg_salesorderdetail.revenue
 FROM stg_salesorderheader
-INNER JOIN stg_salesorderdetail
-	ON stg_salesorderheader.salesorderid = stg_salesorderdetail.salesorderid; 
+INNER JOIN stg_salesorderdetail ON stg_salesorderheader.salesorderid = stg_salesorderdetail.salesorderid
